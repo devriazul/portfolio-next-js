@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="h-screen w-screen bg-slate-800">
       <Image src="https://www.devriazul.com/img/devriazul-profile1.svg" className="m-auto rounded-xl py-5" alt="profile" width={300} height={300} />
