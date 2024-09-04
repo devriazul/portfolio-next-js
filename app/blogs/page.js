@@ -24,7 +24,7 @@ export default function Blogs() {
   ]
   return (
     <div className="h-screen w-screen bg-slate-800">
-      <h1 className="m-auto text-3xl font-bold text-center my-5">This is a Blog Page</h1>
+      <h1 className="m-auto text-3xl font-bold text-center pt-5">This is a Blog Page</h1>
       
       <div className="grid grid-cols-3 gap-4">
         {blogs.map((blog) => (
