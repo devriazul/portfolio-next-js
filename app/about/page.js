@@ -4,7 +4,7 @@ import Button from "@/app/components/Button";
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
   return (
-    <div className="h-screen w-screen bg-slate-800 pt-5">
+    <div className="pt-5">
       
       <p className="m-auto text-xl font-bold text-center">
         Hello, I'm Riazul Islam, a web design and development professional.
@@ -15,6 +15,7 @@ export default function About() {
         <br /> While I enjoy working with emerging technologies, web development remains my top priority.
       </p>
       <Button />
+      <div className="pb-5"></div>
     </div>
   );
 }

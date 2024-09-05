@@ -13,17 +13,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="flex justify-between p-4">
-          <ul className="flex gap-4">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/resume">Resume</Link></li>
-            <li><Link href="/projects">Projects</Link>
-            </li><li><Link href="/blogs">Blogs</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-          </ul>
-        </nav>
-          {children}
+        <div className="container m-auto bg-slate-900">
+          <nav className="flex justify-center p-4 bg-slate-800 mb-5">
+            <ul className="flex gap-4">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/resume">Resume</Link></li>
+              <li><Link href="/projects">Projects</Link>
+              </li><li><Link href="/blogs">Blogs</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+            </ul>
+          </nav>
+            {children}
+        </div>
         </body>
     </html>
   );
