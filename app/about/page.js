@@ -15,7 +15,7 @@ export default function About() {
         <br /> While I enjoy working with emerging technologies, web development remains my top priority.
       </p>
       <Button />
-      <div className="pb-5"></div>
+      <div className="pb-4"></div>
     </div>
   );
 }
