@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "@/app/components/Button";
+import Button from "../components/Button";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
