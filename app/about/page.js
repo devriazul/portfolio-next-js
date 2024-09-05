@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "@/app/components/Button";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function About() {
@@ -13,9 +14,7 @@ export default function About() {
         I am passionate about learning new programming technologies and have a deep love for the field.
         <br /> While I enjoy working with emerging technologies, web development remains my top priority.
       </p>
-      <div className="text-center my-5 pt-5">
-        <a href="https://api.whatsapp.com/send?phone=8801722754100" className="btn btn-xl bg-green-800 p-3 rounded-lg text-xl font-bold" target="_blank">Contact</a>
-      </div>
+      <Button />
     </div>
   );
 }
