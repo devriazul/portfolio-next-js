@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Devriazul Portfolio || About",
+  description: "Official Devriazul Portfolio Website",
+};
 export default function Blogs() {
   const blogs = [
     {

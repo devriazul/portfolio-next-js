@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import React from "react";
 
+export const metadata = {
+    title: "Devriazul Portfolio || Blog Details",
+    description: "Official Devriazul Portfolio Website",
+  };
 export default function BlogPage({ params }) {
     const id = params.id;
     if (id > 3) {
