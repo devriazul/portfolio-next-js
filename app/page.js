@@ -98,7 +98,6 @@ export default function Home() {
                       <p class="text-2xl font-medium text-gray-900 dark:text-white">"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
                   </blockquote>
                   <figcaption class="flex items-center justify-center mt-6 space-x-3">
-                      {/* <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture"> */}
                       <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                           <div class="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
                           <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Google</div>
@@ -127,7 +126,7 @@ export default function Home() {
                       <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
                       <div class="flex justify-between items-center">
                           <div class="flex items-center space-x-4">
-                              <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" />
+                              {/* <Image className="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="Jese Leos avatar" /> */}
                               <span class="font-medium dark:text-white">
                                   Jese Leos
                               </span>
@@ -150,7 +149,7 @@ export default function Home() {
                       <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
                       <div class="flex justify-between items-center">
                           <div class="flex items-center space-x-4">
-                              <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" />
+                              {/* <Image className="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="Bonnie Green avatar" /> */}
                               <span class="font-medium dark:text-white">
                                   Bonnie Green
                               </span>
