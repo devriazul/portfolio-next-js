@@ -5,21 +5,38 @@ export default function Project() {
   const projects = [
     {
       id: 1,
-      title: 'Anonymous Feedback App',
-      description: 'A PHP-based feedback application that allows users to submit feedback anonymously.',
+      image: 'https://devriazul.com/uploads/projects/project1711739930.png',
+      title: 'Pharmacy Management System',
+      description: 'A pharmacy management system built using PHP and Laravel, with multiple payment gateways.',
       technologies: ['PHP', 'Laravel', 'Bootstrap'],
     },
     {
       id: 2,
+      image: 'https://devriazul.com/uploads/projects/project1711739520.png',
       title: 'E-Commerce Platform',
       description: 'An online shopping platform built with React and Laravel, supporting multiple payment gateways.',
       technologies: ['React', 'Laravel', 'MySQL'],
     },
     {
       id: 3,
-      title: 'Portfolio Website',
-      description: 'A personal portfolio built using Next.js and Tailwind CSS, showcasing various projects.',
-      technologies: ['Next.js', 'Tailwind CSS'],
+      image: 'https://devriazul.com/uploads/projects/project1711739742.png',
+      title: 'Institute Management System',
+      description: 'An institute management system built using PHP and Bootstrap, with multiple payment gateways.',
+      technologies: ['Bootstrap', 'PHP'],
+    },
+    {
+      id: 4,
+      image: 'https://devriazul.com/uploads/projects/project1711740022.png',
+      title: 'Library Management System',
+      description: 'A library management system built using PHP and Bootstrap, with multiple payment gateways.',
+      technologies: ['Bootstrap', 'PHP'],
+    },
+  {
+      id: 5,
+      image: 'https://devriazul.com/uploads/projects/project1711739879.png',
+      title: 'Inventory Management System',
+      description: 'An inventory management system built using PHP and Bootstrap, with multiple payment gateways.',
+      technologies: ['Bootstrap', 'CodeIgniter', 'PHP'],
     },
   ];
 
@@ -31,15 +48,16 @@ export default function Project() {
         {projects.map((project) => (
           <div 
             key={project.id} 
-            className="bg-white shadow-md rounded-lg p-6 transform transition-transform hover:scale-105"
+            className="dark:bg-gray-800 shadow-md rounded-lg p-5 transform transition-transform hover:scale-105"
           >
-            <h2 className="text-2xl font-bold text-gray-900">{project.title}</h2>
-            <p className="text-gray-700 mt-4">{project.description}</p>
+            <img src={project.image} alt={project.title} className="w-full h-64 object-cover rounded-lg" />
+            <h2 className="text-2xl font-bold text-gray-200 pt-3">{project.title}</h2>
+            <p className="text-gray-400 mt-3">{project.description}</p>
             <div className="mt-4">
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                  className="bg-blue-100 text-blue-900 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
                 >
                   {tech}
                 </span>
