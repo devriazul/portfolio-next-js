@@ -41,15 +41,15 @@ export default function Home() {
         
 
         {/* Service section start  */}
-        <div class="pb-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
-            <div class="py-3 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="p-5 mx-auto max-w-screen-xl sm:py-8 lg:px-6 bg-white rounded-lg border border-0 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class="px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">What I Do?</h2>
                     {/* <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Experience Developer & Software Enthusiast Creating Functional, User-Centric Applications</p> */}
                     <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Bringing Your Digital Visions to Life</a>
                 </div>
             </div>
-            <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+            <div class="p-5 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                    
@@ -146,7 +146,7 @@ export default function Home() {
             {/* <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">We use an agile approach to test assumptions and connect with the needs of your audience early and often.</p> */}
         </div>
         <div className="grid gap-8 lg:grid-cols-2">
-            <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <article className="p-6 bg-white rounded-lg border-0 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <div className="flex justify-between items-center mb-5 text-gray-500">
                 <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                 <svg className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +173,7 @@ export default function Home() {
                 </Link>
             </div>
             </article>
-            <article className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <article className="p-6 bg-white rounded-lg border-0 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <div className="flex justify-between items-center mb-5 text-gray-500">
                 <span className="bg-primary-100 text-primary-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded dark:bg-primary-200 dark:text-primary-800">
                 <svg className="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
