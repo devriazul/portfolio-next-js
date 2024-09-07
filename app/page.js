@@ -200,7 +200,7 @@ export default function Home() {
                             <span className="font-semibold">Category:</span> {blog.category}
                         </p>
                         <p className="text-gray-500 dark:text-gray-400 mb-5">
-                            {blog.description}
+                            {blog.content}
                         </p>
                         <Link
                             href={`/blogs/${blog.id}`}
