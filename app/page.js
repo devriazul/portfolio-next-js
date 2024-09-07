@@ -38,19 +38,16 @@ export default function Home() {
           </div>
         {/* Hero section End  */}
 
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div class="mx-auto max-w-screen-sm text-center">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">Bringing Your Digital Visions to Life</h2>
-                {/* <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Experience Developer & Software Enthusiast Creating Functional, User-Centric Applications</p> */}
-                <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">5 Years+ Experience</a>
-            </div>
-        </div>
+        
 
         {/* Service section start  */}
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div class="max-w-screen-md mb-8 lg:mb-16">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">My Services</h2>
-                <p class="text-gray-500 sm:text-xl dark:text-gray-400">I offer a range of web development and technical services tailored to help businesses thrive in the digital world.</p>
+        <div class="pb-8 px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+            <div class="py-3 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+                <div class="mx-auto max-w-screen-sm text-center">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">What I Do?</h2>
+                    {/* <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Experience Developer & Software Enthusiast Creating Functional, User-Centric Applications</p> */}
+                    <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Bringing Your Digital Visions to Life</a>
+                </div>
             </div>
             <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
                 <div>
