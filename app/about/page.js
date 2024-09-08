@@ -44,7 +44,7 @@ export default function About() {
           
           <div className="dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
             <h3 className="text-xl font-semibold text-white">Sr. Web-Developer</h3>
-            <p className="text-gray-300">Digital Planet London Ltd.</p>
+            <p className="text-gray-300 text-lg">BHE UNI.</p>
             <p className="text-gray-400">2022 - Present</p>
             <p className="text-gray-300 mt-2">
               I have a proven track record of leading and managing cross-functional IT and marketing teams. I excel in designing and developing robust web applications using React, Vue.js, PHP, and Laravel.
@@ -94,7 +94,7 @@ export default function About() {
               <div key={index} className=" dark:bg-gray-800 shadow-md rounded-lg p-4">
                 <h4 className="text-white text-lg font-semibold">{skill.label}</h4>
                 <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
-                  <div className={`dark:bg-green-900 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
+                  <div className={`dark:bg-blue-400 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
                 </div>
                 <p className="text-sm text-gray-600 mt-2">{skill.value}%</p>
               </div>
@@ -115,7 +115,7 @@ export default function About() {
               <div key={index} className=" dark:bg-gray-800 shadow-md rounded-lg p-4">
                 <h4 className="text-white text-lg font-semibold">{skill.label}</h4>
                 <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
-                  <div className={`dark:bg-green-900 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
+                  <div className={`dark:bg-blue-400 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
                 </div>
                 <p className="text-sm text-gray-600 mt-2">{skill.value}%</p>
               </div>
