@@ -9,6 +9,12 @@ import thumb6 from "@/public/company/1 (6).svg";
 import thumb7 from "@/public/company/1 (7).svg";
 import thumb8 from "@/public/company/1 (8).svg";
 import thumb9 from "@/public/company/1 (9).svg";
+import thumb10 from "@/public/images/services/s (1).svg";
+import thumb11 from "@/public/images/services/s (2).svg";
+import thumb12 from "@/public/images/services/s (3).svg";
+import thumb13 from "@/public/images/services/s (4).svg";
+import thumb14 from "@/public/images/services/s (5).svg";
+import thumb15 from "@/public/images/services/s (6).svg";
 import Link from 'next/link';
 
 export default function Home() {
@@ -82,9 +88,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                    
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
+                    <Image src={thumb10} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">Custom Web Development</h3>
                 <p class="text-gray-500 dark:text-gray-400">From landing pages to full-stack applications, I build custom web solutions using PHP, Laravel, and modern JavaScript frameworks.</p>
@@ -92,9 +96,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                    
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
+                <Image src={thumb11} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">API Integration & Development</h3>
                 <p class="text-gray-500 dark:text-gray-400">I create and integrate APIs for smooth data exchange and enhanced app functionality, including RESTful and GraphQL APIs.</p>
@@ -102,9 +104,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 9l1 2h4l1-2m1 4H8m1 6h6a2 2 0 002-2v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1a2 2 0 002 2z" />
-                    </svg>
+                <Image src={thumb12} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">E-Commerce Solutions</h3>
                 <p class="text-gray-500 dark:text-gray-400">Develop scalable and secure e-commerce platforms with a focus on delivering smooth and engaging shopping experiences.</p>
@@ -112,9 +112,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9.75h4.5M9.75 14.25h4.5M12 3v18m9-9H3" />
-                    </svg>
+                <Image src={thumb13} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">UI-Based Design</h3>
                 <p class="text-gray-500 dark:text-gray-400">Designing intuitive user interfaces that enhance user engagement and experience through simple, elegant solutions.</p>
@@ -122,9 +120,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                   
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12 7-12 7z" />
-                    </svg>
+                <Image src={thumb14} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">Website Optimization & SEO</h3>
                 <p class="text-gray-500 dark:text-gray-400">Optimize your site for performance, SEO, and mobile responsiveness, ensuring fast load times and higher search engine rankings.</p>
@@ -132,9 +128,7 @@ export default function Home() {
                 <div>
                 <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                    
-                    <svg class="w-5 h-5 text-primary-600 dark:text-primary-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                    </svg>
+                <Image src={thumb15} alt="service image 1"></Image>
                 </div>
                 <h3 class="mb-2 text-xl font-bold dark:text-white">Maintenance & Support</h3>
                 <p class="text-gray-500 dark:text-gray-400">Keep your site or application running smoothly with regular updates, bug fixes, and ongoing technical support.</p>
