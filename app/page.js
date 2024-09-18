@@ -15,9 +15,11 @@ import thumb12 from "@/public/images/services/s (3).svg";
 import thumb13 from "@/public/images/services/s (4).svg";
 import thumb14 from "@/public/images/services/s (5).svg";
 import thumb15 from "@/public/images/services/s (6).svg";
-import Link from 'next/link';
+import Link from "next/link";
+import RecentProjects from './components/RecentProjects';
 
 export default function Home() {
+
     const blogs = [
         {
           id: 1,
@@ -149,10 +151,11 @@ export default function Home() {
                 </div>
             </div>
         </div>
-
-
-
         {/* Service section End  */}
+
+        <section class="mx-auto max-w-screen-xxl">
+            <RecentProjects />
+        </section>
 
         {/* Testimonial Section Start */}
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
