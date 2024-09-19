@@ -17,38 +17,13 @@ import thumb14 from "@/public/images/services/s (5).svg";
 import thumb15 from "@/public/images/services/s (6).svg";
 import Link from "next/link";
 import RecentProjects from './components/RecentProjects';
+import RecentBlogs from "./components/RecentBlogs";
 
+export const metadata = {
+    title: 'Devriazul || Home',
+    description: 'Learn more about Devriazul and my journey in web development.',
+  };
 export default function Home() {
-
-    const blogs = [
-        {
-          id: 1,
-          title: "All about WordPress",
-          description: "In-depth details and insights about Blog post 1.",
-          image: "https://devriazul.com/uploads/blogs/blog1706373778.jpg",
-          content:
-            "WordPress is a popular content management system (CMS) that powers millions of websites worldwide...",
-          category: "WordPress",
-        },
-        {
-          id: 2,
-          title: "Introduce Laravel",
-          description: "In-depth details and insights about Blog post 2.",
-          image: "https://devriazul.com/uploads/blogs/blog1706373970.png",
-          content:
-            "Laravel is a powerful PHP framework designed for building web applications...",
-          category: "Laravel",
-        },
-        {
-          id: 3,
-          title: "MySQL Indexing",
-          description: "In-depth details and insights about Blog post 3.",
-          image: "https://devriazul.com/uploads/blogs/blog1706374059.jpg",
-          content:
-            "Indexing in MySQL is a technique used to optimize database performance...",
-          category: "MySQL",
-        },
-      ];
   return (
     <section class="bg-white dark:bg-gray-900">
         {/* Hero section start  */}
@@ -180,7 +155,7 @@ export default function Home() {
         {/* Testimonial Section End */}
 
         {/* Blog Section Start */}
-        <div className="dark:bg-gray-900">
+        {/* <div className="dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
                 <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -237,7 +212,9 @@ export default function Home() {
                 </div>
                 </div>
             </div>
-        </div>
+        </div> */}
+
+        <RecentBlogs />
 
       {/* Blog Section End */}
 
