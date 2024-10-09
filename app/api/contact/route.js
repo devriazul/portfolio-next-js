@@ -6,7 +6,7 @@ export async function POST(req) {
 
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: 'cPanel', // or another email service like 'hotmail', 'yahoo', etc.
+      service: 'mail.devriazul.com', // or another email service like 'hotmail', 'yahoo', etc.
       auth: {
         user: 'info@devriazul.com', // Replace with your Gmail email
         pass: 'mahmud529', // Replace with your Gmail app password
