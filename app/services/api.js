@@ -16,12 +16,19 @@ export async function fetchProjectById(id) {
   return response.json();
 }
 
+// export async function fetchBlogs() {
+//   const response = await fetch('https://api.devriazul.com/api/blogs');
+//   if (!response.ok) {
+//     throw new Error('Failed to fetch blogs');
+//   }
+//   return response.json();
+// }
 export async function fetchBlogs() {
-  const response = await fetch('https://api.devriazul.com/api/blogs');
+  const response = await fetch('/api/blogs'); // Fetch data from the local API route
   if (!response.ok) {
     throw new Error('Failed to fetch blogs');
   }
-  return response.json();
+  return await response.json();
 }
 
 export async function fetchBlogById(id) {

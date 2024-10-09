@@ -6,10 +6,10 @@ export async function POST(req) {
 
     // Create transporter
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // or another email service like 'hotmail', 'yahoo', etc.
+      service: 'cPanel', // or another email service like 'hotmail', 'yahoo', etc.
       auth: {
-        user: 'your-email@gmail.com', // Replace with your Gmail email
-        pass: 'your-app-password', // Replace with your Gmail app password
+        user: 'info@devriazul.com', // Replace with your Gmail email
+        pass: 'mahmud529', // Replace with your Gmail app password
       },
     });
 

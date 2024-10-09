@@ -1,0 +1,169 @@
+{
+    "blogs": [
+      {
+        "id": 1,
+        "title": "All about WordPress",
+        "description": "WordPress is a popular content management system (CMS) that powers millions of websites worldwide. Originally launched in 2003 as a blogging platform, WordPress has evolved into a versatile tool for creating various types of websites, including blogs, business websites, e-commerce stores, portfolios, and more. It is known for its user-friendly interface, extensive customization options, and vast library of plugins and themes. WordPress is built on PHP and uses a MySQL database, making it compatible with most web hosting services. Its flexibility, scalability, and active community support have contributed to its widespread adoption by individuals, businesses, and organizations around the globe.",
+        "slug": "WordPress",
+        "image": "osqH57PbdsVm0NzqAqLZE7HhmVvoPeMSf0jgqjL5.webp",
+        "created_at": "2024-09-11T18:25:21.000000Z",
+        "updated_at": "2024-09-19T15:43:37.000000Z"
+      },
+      {
+        "id": 2,
+        "title": "Introduce Laravel",
+        "description": "Laravel is a powerful PHP framework designed for building web applications following the model-view-controller (MVC) architectural pattern. It offers a robust set of tools and features aimed at making development tasks easier and more efficient. Laravel emphasizes simplicity, elegance, and readability in code, allowing developers to focus on creating high-quality applications rather than getting bogged down in repetitive tasks. With features like built-in authentication, routing, caching, and database migrations, Laravel enables developers to rapidly prototype and deploy web applications while maintaining scalability and maintainability. Additionally, Laravel has a vibrant ecosystem with extensive documentation, community support, and a rich selection of packages through Composer, making it a top choice for PHP developers worldwide.",
+        "slug": "Laravel",
+        "image": "5q7bNacZHMEcUqKEagP36X5jeeO5KHvG2vBfp7oM.webp",
+        "created_at": "2024-09-12T04:59:07.000000Z",
+        "updated_at": "2024-09-19T15:44:09.000000Z"
+      },
+      {
+        "id": 3,
+        "title": "MySQL Indexing",
+        "description": "Description: Indexing in MySQL is a technique used to optimize database performance by allowing quicker retrieval of data from tables. An index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and storage space to maintain the index data structure. MySQL supports various types of indexes, including B-tree indexes, hash indexes, and full-text indexes. Understanding how to properly design and utilize indexes based on the query patterns and data characteristics is crucial for optimizing database performance in MySQL.",
+        "slug": "MySQL",
+        "image": "HByOlOeOSppYLkyK0Q6jwzKaZQuc3Apubgf8CzEs.webp",
+        "created_at": "2024-09-19T15:44:39.000000Z",
+        "updated_at": "2024-09-19T15:44:39.000000Z"
+      },
+      {
+        "id": 4,
+        "title": "Laravel Tinker",
+        "description": "Laravel Tinker allows you to interact with a database without creating the routes. Laravel tinker is used with a php artisan to create the objects or modify the data. The php artisan is a command-line interface that is available with Laravel. Tinker is a command tool that works with php artisan. A tinker plays around the database means that it allows you to create the objects, insert the data, etc.",
+        "slug": "Tools",
+        "image": "7QguKYcBFwQNe1zr8eh2QLuiGD6Blc822NAdYet2.webp",
+        "created_at": "2024-09-19T15:45:07.000000Z",
+        "updated_at": "2024-09-19T15:45:07.000000Z"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "Pharmacy Management System",
+        "description": "A pharmacy management system built using PHP and Laravel, with multiple payment gateways.",
+        "slug": "PHP Laravel Bootstrap",
+        "image": "TTidDxlWoq0nYceEU99qisVVz3xUWdO3xTuaFk1f.png",
+        "created_at": "2024-09-11T18:26:34.000000Z",
+        "updated_at": "2024-09-19T15:30:37.000000Z"
+      },
+      {
+        "id": 2,
+        "title": "E-Commerce Platform",
+        "description": "An online shopping platform built with React and Laravel, supporting multiple payment gateways.",
+        "slug": "ReactLaravelMySQL",
+        "image": "AcgtVTmwORqmizZ6Z0NegeGnJ7qvpRgiZG2SG6zd.png",
+        "created_at": "2024-09-12T10:59:15.000000Z",
+        "updated_at": "2024-09-19T15:31:31.000000Z"
+      },
+      {
+        "id": 3,
+        "title": "Institute Management System",
+        "description": "An institute management system built using PHP and Bootstrap, with multiple payment gateways.",
+        "slug": "Bootstrap PHP",
+        "image": "CP2psUBKHmBqyaBExDG9gl4pI7ruRiH32MfUm0Ll.png",
+        "created_at": "2024-09-19T15:32:11.000000Z",
+        "updated_at": "2024-09-19T15:32:11.000000Z"
+      },
+      {
+        "id": 4,
+        "title": "Inventory Management System",
+        "description": "An inventory management system built using PHP and Bootstrap, with multiple payment gateways.",
+        "slug": "Bootstrap Laravel",
+        "image": "ljIRhRQyBKn7vFwpXt5cVfrRUW4M5xGDHe2gATbJ.png",
+        "created_at": "2024-09-19T15:33:38.000000Z",
+        "updated_at": "2024-09-19T15:33:38.000000Z"
+      },
+      {
+        "id": 5,
+        "title": "Library Management System",
+        "description": "A library management system built using PHP and Bootstrap, with multiple payment gateways.",
+        "slug": "Bootstrap PHP Codegnitor",
+        "image": "ZIcMjNM9pTtDX5AhyxHuFDLru8sMBagzrVV941UL.png",
+        "created_at": "2024-09-19T15:41:54.000000Z",
+        "updated_at": "2024-09-19T15:42:11.000000Z"
+      },
+      {
+        "id": 6,
+        "title": "Student Application System Development",
+        "description": "Students: Apply for courses, view their status, and manage personal information.",
+        "slug": "Dashboard",
+        "image": "zQG9efQrglkStteODglt9dK6PjXGp5Q6x658Y7qZ.png",
+        "created_at": "2024-09-19T18:13:31.000000Z",
+        "updated_at": "2024-09-19T18:14:28.000000Z"
+      },
+      {
+        "id": 7,
+        "title": "EdTech Company Website",
+        "description": "BHE UNI supports students through their journey abroad by providing an all-in-one cloud platform. It\r\nintegrates websites, CRM using Laravel, and mobile application APIs.\r\nTechnologies: Flutter, Bootstrap, PHP Laravel, MySQL.",
+        "slug": "BHEUNI",
+        "image": "Cy8EJPlRgYmkU3BxmWhI3yiOyiceSd3kovmtNsUe.png",
+        "created_at": "2024-10-09T17:41:58.000000Z",
+        "updated_at": "2024-10-09T17:41:58.000000Z"
+      },
+      {
+        "id": 8,
+        "title": "Admission Management System",
+        "description": "MyMac portal, a UK-standard admission management\r\nsystem, alongside their university website. Both are developed using Laravel.",
+        "slug": "mymac",
+        "image": "N99zZ20RBAvk2BFQUmxrzTdOINfcFiAzANyINbVL.png",
+        "created_at": "2024-10-09T17:42:59.000000Z",
+        "updated_at": "2024-10-09T17:42:59.000000Z"
+      },
+      {
+        "id": 9,
+        "title": "UK Management College Website & CMS",
+        "description": "UKMC is a London-based university utilizing the MyMac portal, a UK-standard admission management\r\nsystem, alongside their university website. Both are developed using Laravel.",
+        "slug": "ukmc",
+        "image": "uPKMqMgQK23NJUt1kqsziU2hH8UuRNJSKX42JJg8.png",
+        "created_at": "2024-10-09T17:43:39.000000Z",
+        "updated_at": "2024-10-09T17:43:39.000000Z"
+      },
+      {
+        "id": 10,
+        "title": "Digital Marketing School Website & LMS",
+        "description": "London DMS is a comprehensive learning platform that includes a robust Learning Management\r\nSystem (LMS) and a front-end website built using the Laravel framework.",
+        "slug": "dms",
+        "image": "0ly1mT4IAFwhaAtichrWYAsO6wz52qIuMPcmg45p.png",
+        "created_at": "2024-10-09T17:44:27.000000Z",
+        "updated_at": "2024-10-09T17:44:27.000000Z"
+      },
+      {
+        "id": 11,
+        "title": "EdTech CRM",
+        "description": "BHE CRM supports students through their journey abroad by providing an all-in-one cloud platform. It\r\nintegrates websites, CRM using Laravel, and mobile application APIs.",
+        "slug": "crm",
+        "image": "a1cwD148VOWldpd9ACtH0gWzv5XRIqwPs3kvDhDb.png",
+        "created_at": "2024-10-09T17:45:26.000000Z",
+        "updated_at": "2024-10-09T17:45:26.000000Z"
+      },
+      {
+        "id": 12,
+        "title": "Student Admission Portal",
+        "description": "BHE Student Portal supports students through their journey abroad by providing an all-in-one cloud platform. It\r\nintegrates websites, CRM using Laravel, and mobile application APIs.",
+        "slug": "student-portal",
+        "image": "dNQNDVvNJmYhQW0QEtbTWEQHep7stP3mNG0hcSMt.png",
+        "created_at": "2024-10-09T17:47:24.000000Z",
+        "updated_at": "2024-10-09T17:47:24.000000Z"
+      },
+      {
+        "id": 13,
+        "title": "Agent Application Portal",
+        "description": "BHE Agent Portal supports students through their journey abroad by providing an all-in-one cloud platform. It\r\nintegrates websites, CRM using Laravel, and mobile application APIs.",
+        "slug": "agent-portal",
+        "image": "dz13bI9VdkPYcYUPaPo8fKQES71PHf7CNgMLt1Dm.png",
+        "created_at": "2024-10-09T17:47:59.000000Z",
+        "updated_at": "2024-10-09T17:47:59.000000Z"
+      },
+      {
+        "id": 14,
+        "title": "Fulsurat Foundation - Charity Website",
+        "description": "A charity & student funding and scholarship website with a Next.js front-end and Laravel backend.\r\nTechnologies: Next.js, Laravel",
+        "slug": "charity",
+        "image": "nu1nnNLceOnPsiXgF7obvGha0sObzMu0Egmx16JF.png",
+        "created_at": "2024-10-09T17:48:35.000000Z",
+        "updated_at": "2024-10-09T17:48:35.000000Z"
+      }
+    ]
+  }
+  

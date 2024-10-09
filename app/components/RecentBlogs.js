@@ -1,28 +1,34 @@
-// app/components/RecentBlogs.js
-
 "use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { fetchBlogs } from "../services/api";
+
+// Import the JSON data
+import blogsData from "../../data/db.json"; // Adjust this path based on your project structure
 
 const RecentBlogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    const loadBlogs = async () => {
+    // Simulate fetching data from the JSON file
+    const loadBlogs = () => {
       try {
-        const data = await fetchBlogs();
-        setBlogs(data);
+        // Assuming blogsData is structured with a key 'blogs'
+        const data = blogsData.blogs || []; // Fallback to empty array if 'blogs' is undefined
+        
+        // Sort blogs in descending order by ID (or any other relevant property)
+        const sortedBlogs = data.sort((a, b) => b.id - a.id);
+        
+        setBlogs(sortedBlogs);
       } catch (error) {
-        console.error("Failed to fetch blogs:", error);
+        console.error("Failed to load blogs:", error);
       }
     };
 
     loadBlogs();
   }, []);
 
-  const imageUrlPrefix = "https://api.devriazul.com/storage/";
+  const imageUrlPrefix = "../images/"; // Update to your image path if needed
 
   return (
     <div className="p-8 dark:bg-gray-900">
@@ -42,9 +48,10 @@ const RecentBlogs = () => {
               {blog.title}
             </h2>
             <p className="text-gray-400 mt-3">
-              {blog.content.length > 80
-                ? `${blog.content.slice(0, 80)}...`
-                : blog.content}
+              {/* Safety check for blog.description */}
+              {blog.description && blog.description.length > 80
+                ? `${blog.description.slice(0, 80)}...`
+                : blog.description || "description not available."}
             </p>
             <Link
               href={`/blogs/${blog.id}`}

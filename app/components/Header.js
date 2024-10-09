@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/images/logo.svg";
+import logo from "@/public/images/logo.svg"; // Import the logo
 
 const Header = () => {
   const pathname = usePathname();
@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header>
-      <link rel="icon" href="https://devriazul.com/img/devriazul.svg" />
+      <link rel="icon" href={logo.src} /> {/* Use logo.src here */}
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="/" className="flex items-center">

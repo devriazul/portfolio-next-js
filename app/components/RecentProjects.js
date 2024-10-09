@@ -1,28 +1,34 @@
-// app/components/RecentProjects.js
-
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { fetchProjects } from '../services/api';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+
+// Import the JSON data
+import projectsData from "../../data/db.json"; // Adjust this path based on your project structure
 
 const RecentProjects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const loadProjects = async () => {
+    // Simulate fetching data from the JSON file
+    const loadProjects = () => {
       try {
-        const data = await fetchProjects();
-        setProjects(data);
+        // Assuming projectsData is structured with a key 'projects'
+        const data = projectsData.projects || []; // Fallback to empty array if 'projects' is undefined
+        
+        // Sort projects in descending order by ID (or any other relevant property)
+        const sortedProjects = data.sort((a, b) => b.id - a.id);
+        
+        setProjects(sortedProjects);
       } catch (error) {
-        console.error('Failed to fetch projects:', error);
+        console.error("Failed to load projects:", error);
       }
     };
 
     loadProjects();
   }, []);
 
-  const imageUrlPrefix = 'https://api.devriazul.com/storage/';
+  const imageUrlPrefix = "../images/"; // Update to your image path if needed
 
   return (
     <div className="p-8 dark:bg-gray-900">
@@ -38,13 +44,20 @@ const RecentProjects = () => {
               alt={project.title}
               className="w-full h-64 object-cover rounded-lg"
             />
-            <h2 className="text-2xl font-bold text-gray-200 pt-3">{project.title}</h2>
-            <p className="text-gray-400 mt-3">{project.description}</p>
+            <h2 className="text-2xl font-bold text-gray-200 pt-3">
+              {project.title}
+            </h2>
+            <p className="text-gray-400 mt-3">
+              {/* Safety check for project.description */}
+              {project.description && project.description.length > 80
+                ? `${project.description.slice(0, 80)}...`
+                : project.description || "Description not available."}
+            </p>
             <Link
               href={`/projects/${project.id}`}
               className="text-blue-500 font-bold mt-4 inline-block hover:underline"
             >
-              View Details
+              View Project
             </Link>
           </div>
         ))}
