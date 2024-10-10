@@ -35,7 +35,17 @@
         "image": "7QguKYcBFwQNe1zr8eh2QLuiGD6Blc822NAdYet2.webp",
         "created_at": "2024-09-19T15:45:07.000000Z",
         "updated_at": "2024-09-19T15:45:07.000000Z"
+      },
+      {
+        "id": 5,
+        "title": "Using Firebase with Laravel for Authentication",
+        "description": "Firebase provides a flexible and secure authentication system with easy-to-integrate APIs for user sign-in. By integrating Firebase Authentication into a Laravel application, you can use Firebase as the backend for your login and registration system. In this guide, we'll walk through setting up Firebase authentication with Laravel.\n\nStep 1: Create a Firebase Project\nTo get started, you'll need a Firebase project. Follow these steps:\n1. Visit https://console.firebase.google.com/.\n2. Click \"Add Project\" and follow the instructions to create a new Firebase project.\n3. Enable Authentication: In the Firebase dashboard, navigate to \"Authentication\" and click \"Get Started\". Enable the sign-in methods you wish to use (Email/Password, Google, Facebook, etc.).\n\nStep 2: Install Firebase SDK in Laravel\nTo integrate Firebase in your Laravel application, you need to install the Firebase SDK for PHP.",
+        "slug": "Firebase",
+        "image": "laravel+firebase.png",
+        "created_at": "2024-09-19T15:45:32.000000Z",
+        "updated_at": "2024-09-19T15:45:32.000000Z"
       }
+      
     ],
     "projects": [
       {
