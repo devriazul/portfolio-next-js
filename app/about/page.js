@@ -1,5 +1,5 @@
 import Image from "next/image";
-import about from "@/public/images/about.png";
+import about from "@/public/images/main.svg";
 import Link from "next/link";
 
 export const metadata = {

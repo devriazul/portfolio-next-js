@@ -1,5 +1,5 @@
 import Image from "next/image";
-import thumb from "@/public/images/devriazul.svg";
+import thumb from "@/public/images/main2.svg";
 import thumb1 from "@/public/company/1 (1).svg";
 import thumb2 from "@/public/company/1 (2).svg";
 import thumb3 from "@/public/company/1 (3).svg";
@@ -29,7 +29,7 @@ export default function Home() {
         {/* Hero section start  */}
           <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
               <div class="mr-auto place-self-center lg:col-span-7">
-                  <h1 class="max-w-2xl my-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl dark:text-white">Riazul Islam</h1>
+                  <h1 class="max-w-2xl my-4 text-2xl font-extrabold tracking-tight leading-none md:text-xl xl:text-4xl dark:text-white">Riazul Islam</h1>
                   <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">With a passion for crafting robust web solutions, I specialize in PHP, Laravel, and JavaScript frameworks and tools like Next.js. From designing interactive user experiences to building efficient backends, I bring a holistic approach to design and development. Let's collaborate and take your digital project to the next level.</p>
                   
                   <section className="flex flex-col items-start space-y-4 mt-8">
@@ -60,6 +60,7 @@ export default function Home() {
               </div>
               <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                   <Image src={thumb} className="m-auto rounded-lg" alt="profile image" />
+                  {/* <Image src={thumb} className="m-auto rounded-lg" alt="profile image" /> */}
               </div>                
           </div>
         {/* Hero section End  */}
@@ -68,9 +69,9 @@ export default function Home() {
 
         {/* Service section start  */}
         <div class="p-5 mx-auto max-w-screen-xl sm:py-8 lg:px-6 bg-white rounded-lg border border-0 shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <div class="px-4 mx-auto max-w-screen-xl sm:py-8 lg:px-6">
+            <div class="px-4 mx-auto max-w-screen-xl sm:py-3 lg:px-6">
                 <div class="mx-auto max-w-screen-sm text-center">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">What I Do?</h2>
+                    <h2 class="mb-4 text-3xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">What I Do?</h2>
                     {/* <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Experience Developer & Software Enthusiast Creating Functional, User-Centric Applications</p> */}
                     <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Bringing Your Digital Visions to Life</a>
                 </div>
@@ -81,7 +82,7 @@ export default function Home() {
                    
                     <Image src={thumb10} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">Custom Web Development</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">Custom Web Development</h3>
                 <p class="text-gray-500 dark:text-gray-400">From landing pages to full-stack applications, I build custom web solutions using PHP, Laravel, and modern JavaScript frameworks.</p>
                 </div>
                 <div>
@@ -89,7 +90,7 @@ export default function Home() {
                    
                 <Image src={thumb11} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">API Integration & Development</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">API Integration & Development</h3>
                 <p class="text-gray-500 dark:text-gray-400">I create and integrate APIs for smooth data exchange and enhanced app functionality, including RESTful and GraphQL APIs.</p>
                 </div>
                 <div>
@@ -97,7 +98,7 @@ export default function Home() {
                   
                 <Image src={thumb12} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">E-Commerce Solutions</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">E-Commerce Solutions</h3>
                 <p class="text-gray-500 dark:text-gray-400">Develop scalable and secure e-commerce platforms with a focus on delivering smooth and engaging shopping experiences.</p>
                 </div>
                 <div>
@@ -105,7 +106,7 @@ export default function Home() {
                   
                 <Image src={thumb13} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">UI-Based Design</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">UI-Based Design</h3>
                 <p class="text-gray-500 dark:text-gray-400">Designing intuitive user interfaces that enhance user engagement and experience through simple, elegant solutions.</p>
                 </div>
                 <div>
@@ -113,7 +114,7 @@ export default function Home() {
                   
                 <Image src={thumb14} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">Website Optimization & SEO</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">Website Optimization & SEO</h3>
                 <p class="text-gray-500 dark:text-gray-400">Optimize your site for performance, SEO, and mobile responsiveness, ensuring fast load times and higher search engine rankings.</p>
                 </div>
                 <div>
@@ -121,28 +122,28 @@ export default function Home() {
                    
                 <Image src={thumb15} alt="service image 1"></Image>
                 </div>
-                <h3 class="mb-2 text-xl font-bold dark:text-white">Maintenance & Support</h3>
+                <h3 class="mb-2 text-lg font-bold dark:text-white">Maintenance & Support</h3>
                 <p class="text-gray-500 dark:text-gray-400">Keep your site or application running smoothly with regular updates, bug fixes, and ongoing technical support.</p>
                 </div>
             </div>
         </div>
         {/* Service section End  */}
 
-        <section class="mx-auto max-w-screen-xxl">
+        <section class="mx-auto py-8 max-w-screen-xxl">
             <RecentProjects />
         </section>
 
         {/* Testimonial Section Start */}
         <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Testimonials</h2>
+            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Testimonials</h2>
         </div>
         <figure className="max-w-screen-md mx-auto">
-            <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="h-8 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
             </svg>
             <blockquote>
-            <p className="text-xl font-medium text-gray-900 dark:text-white">The web application he developed with PHP and Laravel has elevated my portfolio website to new heights. It is seamless performance and intuitive design have garnered praise from clients and industry peers alike..</p>
+            <p className="text-md font-medium text-gray-900 dark:text-white">The web application he developed with PHP and Laravel has elevated my portfolio website to new heights. It is seamless performance and intuitive design have garnered praise from clients and industry peers alike..</p>
             </blockquote>
             <figcaption className="flex items-center justify-center mt-6 space-x-3">
             <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
@@ -162,36 +163,36 @@ export default function Home() {
 
       {/* Worked Section Start */}
         <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Worked Organizations</h2>
+            <h2 class="mb-3 lg:mb-10 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-3xl">Worked Organizations</h2>
             <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
                 <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
                     <Image src={thumb1} className="m-auto rounded-lg" alt="profile image" />                        
                 </Link>
                 <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
+                    <Image src={thumb8} className="m-auto rounded-lg" alt="profile image" />                        
+                </Link>
+                {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
                     <Image src={thumb2} className="m-auto rounded-lg" alt="profile image" />                        
+                </Link> */}
+                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
+                    <Image src={thumb9} className="m-auto rounded-lg" alt="profile image" />                        
+                </Link>
+                {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
+                    <Image src={thumb5} className="m-auto rounded-lg" alt="profile image" />                        
+                </Link> */}
+                
+                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
+                    <Image src={thumb7} className="m-auto rounded-lg" alt="profile image" />                        
                 </Link>
                 <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
                     <Image src={thumb3} className="m-auto rounded-lg" alt="profile image" />                        
                 </Link>
                 {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
                     <Image src={thumb4} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb5} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb6} className="m-auto rounded-lg" alt="profile image" />                        
                 </Link> */}
                 <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb7} className="m-auto rounded-lg" alt="profile image" />                        
+                    <Image src={thumb6} className="m-auto rounded-lg" alt="profile image" />                        
                 </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb8} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb9} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link>
-                
             </div>
         </div>
 

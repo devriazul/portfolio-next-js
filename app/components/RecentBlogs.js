@@ -32,9 +32,9 @@ const RecentBlogs = () => {
 
   return (
     <div className="p-8 dark:bg-gray-900">
-      <h1 className="text-4xl font-bold text-center mb-12">Recent Blogs</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {blogs.slice(0, 4).map((blog) => (
+      <h1 className="text-3xl font-bold text-center mb-12">Recent Blogs</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        {blogs.slice(0, 6).map((blog) => (
           <div
             key={blog.id}
             className="dark:bg-gray-800 shadow-md rounded-lg p-5 transform transition-transform hover:scale-105"
@@ -42,20 +42,20 @@ const RecentBlogs = () => {
             <img
               src={`${imageUrlPrefix}${blog.image}`}
               alt={blog.title}
-              className="w-full h-64 object-cover rounded-lg"
+              className="w-full h-50 object-cover rounded-lg"
             />
-            <h2 className="text-2xl font-bold text-gray-200 pt-3">
+            <h2 className="text-md font-bold text-gray-200 pt-3">
               {blog.title}
             </h2>
             <p className="text-gray-400 mt-3">
               {/* Safety check for blog.description */}
-              {blog.description && blog.description.length > 80
-                ? `${blog.description.slice(0, 80)}...`
+              {blog.description && blog.description.length > 50
+                ? `${blog.description.slice(0, 50)}...`
                 : blog.description || "description not available."}
             </p>
             <Link
               href={`/blogs/${blog.id}`}
-              className="text-blue-500 font-bold mt-4 inline-block hover:underline"
+              className="text-indigo-300 text-sm font-bold mt-4 inline-block hover:underline"
             >
               Read More
             </Link>
