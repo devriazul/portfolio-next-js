@@ -47,101 +47,160 @@ export default function About() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-8">
-       
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2">Work Experience and Education </h1>
-          <p className="text-lg text-gray-600">Combination of Skills and Experiences</p>
+      <div className="max-w-7xl mx-auto p-8 space-y-16">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Professional Journey</h1>
+          <p className="text-lg text-gray-400">Experience, Education & Expertise</p>
         </div>
 
-        
-        <section className="mb-12 ">
-          <h2 className="text-2xl font-bold text-white mb-4">Work Experiences</h2>
-
-          
-          <div className="dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
-            <h3 className="text-xl font-semibold text-white">Sr. Web-Developer</h3>
-            <p className="text-gray-300 text-lg">BHE UNI.</p>
-            <p className="text-gray-400">2022 - Present</p>
-            <p className="text-gray-300 mt-2">
-              I have a proven track record of leading and managing cross-functional IT and marketing teams. I excel in designing and developing robust web applications using React, Vue.js, PHP, and Laravel.
-            </p>
-          </div>
-
-         
-          <div className="dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
-            <h3 className="text-xl font-semibold text-white">Web-Developer</h3>
-            <p className="text-gray-300">Saic Group</p>
-            <p className="text-gray-400">2020 - 2022</p>
-            <p className="text-gray-300 mt-2">
-              My web design and development services encompass HTML, CSS, Bootstrap, Sass, and WordPress.
-            </p>
-          </div>
-        </section>
-
-        <section className="mb-12 ">
-          <h2 className="text-2xl font-bold text-white mb-4">Educational Qualification</h2>
-          <div className="dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
-            <h3 className="text-xl font-semibold text-white">MSc in Computer Science and Engineering</h3>
-            <p className="text-gray-300">Jahangirnagar University</p>
-            <p className="text-gray-400">2020 - 2022</p>
-          </div>
-
-          <div className="dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
-            <h3 className="text-xl font-semibold text-white">BSc in Computer Science and Engineering</h3>
-            <p className="text-gray-300">Fareast International University</p>
-            <p className="text-gray-400">2016 - 2020</p>
-          </div>
-        </section>
-
-
-        <section className="mb-12 ">
-          <h2 className="text-2xl font-bold text-white mb-4">Software Skills</h2>
-          <div className="grid grid-cols-2 gap-4 text-gray-900">
-            {[
-              { label: 'Next JS', value: 75 },
-              { label: 'Github', value: 90 },
-              { label: 'PHP', value: 85 },
-              { label: 'Laravel', value: 75 },
-              { label: 'MySQL', value: 95 },
-              { label: 'WordPress', value: 80 },
-              { label: 'Bootstrap', value: 90 },
-              { label: 'Tailwind', value: 70 },
-            ].map((skill, index) => (
-              <div key={index} className=" dark:bg-gray-800 shadow-md rounded-lg p-4">
-                <h4 className="text-white text-lg font-semibold">{skill.label}</h4>
-                <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
-                  <div className={`dark:bg-blue-400 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">{skill.value}%</p>
+        <div className="grid md:grid-cols-2 gap-8">
+          <section className="space-y-6">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="h-8 w-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
+                <svg className="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
-            ))}
-          </div>
-        </section>
-       
-        <section className="mb-12 ">
-          <h2 className="text-2xl font-bold text-white mb-4">Personal Skills</h2>
-          <div className="grid grid-cols-2 gap-4 text-gray-900">
-            {[
-              { label: 'Time Management', value: 90 },
-              { label: 'Efficiency', value: 70 },
-              { label: 'Integrity', value: 80 },
-              { label: 'Communication', value: 88 },
-              { label: 'Productivity', value: 93 },
-            ].map((skill, index) => (
-              <div key={index} className=" dark:bg-gray-800 shadow-md rounded-lg p-4">
-                <h4 className="text-white text-lg font-semibold">{skill.label}</h4>
-                <div className="w-full bg-gray-200 rounded-full h-4 mt-2">
-                  <div className={`dark:bg-blue-400 h-4 rounded-full`} style={{ width: `${skill.value}%` }}></div>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">{skill.value}%</p>
-              </div>
-            ))}
-          </div>
-        </section>
+              <h2 className="text-2xl font-bold text-white">Work Experience</h2>
+            </div>
 
-        
-        
+            <div className="relative pl-4 space-y-6">
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-500/20"></div>
+              
+              <div className="relative dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-6 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-blue-500/5">
+                <div className="absolute -left-2.5 top-6 h-5 w-5 rounded-full border-2 border-blue-500 bg-gray-900"></div>
+                <h3 className="text-xl font-semibold text-white mb-1">Sr. Web-Developer</h3>
+                <div className="flex items-center text-sm text-gray-400 mb-3">
+                  <span className="text-blue-400">BHE UNI.</span>
+                  <span className="mx-2">•</span>
+                  <span>2022 - Present</span>
+                </div>
+                <p className="text-gray-300">
+                  I have a proven track record of leading and managing cross-functional IT and marketing teams. I excel in designing and developing robust web applications using React, Vue.js, PHP, and Laravel.
+                </p>
+              </div>
+
+              <div className="relative dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-6 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-blue-500/5">
+                <div className="absolute -left-2.5 top-6 h-5 w-5 rounded-full border-2 border-blue-500 bg-gray-900"></div>
+                <h3 className="text-xl font-semibold text-white mb-1">Web-Developer</h3>
+                <div className="flex items-center text-sm text-gray-400 mb-3">
+                  <span className="text-blue-400">Saic Group</span>
+                  <span className="mx-2">•</span>
+                  <span>2020 - 2022</span>
+                </div>
+                <p className="text-gray-300">
+                  My web design and development services encompass HTML, CSS, Bootstrap, Sass, and WordPress.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="space-y-6">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="h-8 w-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
+                <svg className="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white">Education</h2>
+            </div>
+
+            <div className="relative pl-4 space-y-6">
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-purple-500/20"></div>
+
+              <div className="relative dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-6 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-purple-500/5">
+                <div className="absolute -left-2.5 top-6 h-5 w-5 rounded-full border-2 border-purple-500 bg-gray-900"></div>
+                <h3 className="text-xl font-semibold text-white mb-1">MSc in Computer Science and Engineering</h3>
+                <div className="flex items-center text-sm text-gray-400">
+                  <span className="text-purple-400">Jahangirnagar University</span>
+                  <span className="mx-2">•</span>
+                  <span>2020 - 2022</span>
+                </div>
+              </div>
+
+              <div className="relative dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-6 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-purple-500/5">
+                <div className="absolute -left-2.5 top-6 h-5 w-5 rounded-full border-2 border-purple-500 bg-gray-900"></div>
+                <h3 className="text-xl font-semibold text-white mb-1">BSc in Computer Science and Engineering</h3>
+                <div className="flex items-center text-sm text-gray-400">
+                  <span className="text-purple-400">Fareast International University</span>
+                  <span className="mx-2">•</span>
+                  <span>2016 - 2020</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div className="space-y-12">
+          <section>
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="h-8 w-8 bg-green-500/20 rounded-lg flex items-center justify-center">
+                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white">Software Skills</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { label: 'Next JS', value: 75 },
+                { label: 'Github', value: 90 },
+                { label: 'PHP', value: 85 },
+                { label: 'Laravel', value: 75 },
+                { label: 'MySQL', value: 95 },
+                { label: 'WordPress', value: 80 },
+                { label: 'Bootstrap', value: 90 },
+                { label: 'Tailwind', value: 70 },
+              ].map((skill, index) => (
+                <div key={index} className="dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-4 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-green-500/5">
+                  <h4 className="text-white text-lg font-semibold mb-2">{skill.label}</h4>
+                  <div className="w-full bg-gray-700/50 rounded-full h-2.5 mb-2">
+                    <div
+                      className="bg-gradient-to-r from-green-400 to-green-600 h-2.5 rounded-full transition-all duration-500 ease-out"
+                      style={{ width: `${skill.value}%` }}
+                    ></div>
+                  </div>
+                  <span className="text-sm text-gray-400">{skill.value}%</span>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          <section>
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="h-8 w-8 bg-yellow-500/20 rounded-lg flex items-center justify-center">
+                <svg className="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h2 className="text-2xl font-bold text-white">Personal Skills</h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { label: 'Time Management', value: 90 },
+                { label: 'Efficiency', value: 70 },
+                { label: 'Integrity', value: 80 },
+                { label: 'Communication', value: 88 },
+                { label: 'Productivity', value: 93 }
+              ].map((skill, index) => (
+                <div key={index} className="dark:bg-gray-800/50 backdrop-blur-sm shadow-xl rounded-xl p-4 transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-yellow-500/5">
+                  <h4 className="text-white text-lg font-semibold mb-2">{skill.label}</h4>
+                  <div className="w-full bg-gray-700/50 rounded-full h-2.5 mb-2">
+                    <div
+                      className="bg-gradient-to-r from-yellow-400 to-yellow-600 h-2.5 rounded-full transition-all duration-500 ease-out"
+                      style={{ width: `${skill.value}%` }}
+                    ></div>
+                  </div>
+                  <span className="text-sm text-gray-400">{skill.value}%</span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
     </section>
     

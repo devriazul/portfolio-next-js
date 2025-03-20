@@ -1,7 +1,9 @@
+'use client';
 import Image from "next/image";
 import thumb from "@/public/images/main2.svg";
 import thumb1 from "@/public/company/1 (1).svg";
 import thumb2 from "@/public/company/1 (2).svg";
+import AnimatedSection from './components/AnimatedSection';
 import thumb3 from "@/public/company/1 (3).svg";
 import thumb4 from "@/public/company/1 (4).svg";
 import thumb5 from "@/public/company/1 (5).svg";
@@ -18,19 +20,19 @@ import thumb15 from "@/public/images/services/s (6).svg";
 import Link from "next/link";
 import RecentProjects from './components/RecentProjects';
 import RecentBlogs from "./components/RecentBlogs";
-
-export const metadata = {
-    title: 'Devriazul || Home',
-    description: 'Learn more about Devriazul and my journey in web development.',
-  };
 export default function Home() {
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <main>
+      <section className="relative bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 overflow-hidden">
         {/* Hero section start  */}
-          <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-              <div class="mr-auto place-self-center lg:col-span-7">
-                  <h1 class="max-w-2xl my-4 text-2xl font-extrabold tracking-tight leading-none md:text-xl xl:text-4xl dark:text-white">Riazul Islam</h1>
-                  <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">With a passion for crafting robust web solutions, I specialize in PHP, Laravel, and JavaScript frameworks and tools like Next.js. From designing interactive user experiences to building efficient backends, I bring a holistic approach to design and development. Let's collaborate and take your digital project to the next level.</p>
+        <div className="absolute inset-0 bg-[url('/images/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
+        <AnimatedSection className="relative grid max-w-screen-xl px-4 py-16 mx-auto lg:gap-8 xl:gap-0 lg:py-24 lg:grid-cols-12">
+              <div className="mr-auto place-self-center lg:col-span-7">
+                  <span className="inline-flex items-center px-3 py-1 mb-4 text-sm font-medium text-blue-400 bg-blue-900/30 rounded-full">
+                    Full Stack Developer
+                  </span>
+                  <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl bg-gradient-to-r from-white via-blue-100 to-blue-300 bg-clip-text text-transparent animate-gradient">Riazul Islam</h1>
+                  <p className="max-w-2xl mb-6 text-lg text-gray-300 lg:mb-8 lg:text-xl">With a passion for crafting robust web solutions, I specialize in PHP, Laravel, and JavaScript frameworks and tools like Next.js. From designing interactive user experiences to building efficient backends, I bring a holistic approach to design and development. Let's collaborate and take your digital project to the next level.</p>
                   
                   <section className="flex flex-col items-start space-y-4 mt-8">
                         <div className="flex space-x-4">
@@ -62,97 +64,89 @@ export default function Home() {
                   <Image src={thumb} className="m-auto rounded-lg" alt="profile image" />
                   {/* <Image src={thumb} className="m-auto rounded-lg" alt="profile image" /> */}
               </div>                
-          </div>
+          </AnimatedSection>
+    </section>
         {/* Hero section End  */}
 
-        
-
         {/* Service section start  */}
-        <div class="p-5 mx-auto max-w-screen-xl sm:py-8 lg:px-6 bg-white rounded-lg border border-0 shadow-md dark:bg-gray-800 dark:border-gray-700">
-            <div class="px-4 mx-auto max-w-screen-xl sm:py-3 lg:px-6">
-                <div class="mx-auto max-w-screen-sm text-center">
-                    <h2 class="mb-4 text-3xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">What I Do?</h2>
-                    {/* <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Experience Developer & Software Enthusiast Creating Functional, User-Centric Applications</p> */}
-                    <a href="#" class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Bringing Your Digital Visions to Life</a>
+        <AnimatedSection delay={0.2} className="p-8 mx-auto max-w-screen-xl sm:py-16 lg:px-8 bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-800/50 shadow-xl">
+            <div className="mx-auto max-w-screen-xl">
+                <div className="mx-auto max-w-2xl text-center mb-16">
+                    <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">What I Do?</h2>
+                    <p className="text-lg text-gray-400">Bringing Your Digital Visions to Life with Modern Solutions</p>
                 </div>
             </div>
-            <div class="p-5 space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                   
-                    <Image src={thumb10} alt="service image 1"></Image>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb10} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Custom Web Development</h3>
+                    <p className="text-gray-400">From landing pages to full-stack applications, I build custom web solutions using PHP, Laravel, and modern JavaScript frameworks.</p>
                 </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">Custom Web Development</h3>
-                <p class="text-gray-500 dark:text-gray-400">From landing pages to full-stack applications, I build custom web solutions using PHP, Laravel, and modern JavaScript frameworks.</p>
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb11} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">API Integration & Development</h3>
+                    <p className="text-gray-400">I create and integrate APIs for smooth data exchange and enhanced app functionality, including RESTful and GraphQL APIs.</p>
                 </div>
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                   
-                <Image src={thumb11} alt="service image 1"></Image>
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb12} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">E-Commerce Solutions</h3>
+                    <p className="text-gray-400">Develop scalable and secure e-commerce platforms with a focus on delivering smooth and engaging shopping experiences.</p>
                 </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">API Integration & Development</h3>
-                <p class="text-gray-500 dark:text-gray-400">I create and integrate APIs for smooth data exchange and enhanced app functionality, including RESTful and GraphQL APIs.</p>
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb13} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">UI-Based Design</h3>
+                    <p className="text-gray-400">Designing intuitive user interfaces that enhance user engagement and experience through simple, elegant solutions.</p>
                 </div>
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  
-                <Image src={thumb12} alt="service image 1"></Image>
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb14} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Website Optimization & SEO</h3>
+                    <p className="text-gray-400">Optimize your site for performance, SEO, and mobile responsiveness, ensuring fast load times and higher search engine rankings.</p>
                 </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">E-Commerce Solutions</h3>
-                <p class="text-gray-500 dark:text-gray-400">Develop scalable and secure e-commerce platforms with a focus on delivering smooth and engaging shopping experiences.</p>
-                </div>
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  
-                <Image src={thumb13} alt="service image 1"></Image>
-                </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">UI-Based Design</h3>
-                <p class="text-gray-500 dark:text-gray-400">Designing intuitive user interfaces that enhance user engagement and experience through simple, elegant solutions.</p>
-                </div>
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                  
-                <Image src={thumb14} alt="service image 1"></Image>
-                </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">Website Optimization & SEO</h3>
-                <p class="text-gray-500 dark:text-gray-400">Optimize your site for performance, SEO, and mobile responsiveness, ensuring fast load times and higher search engine rankings.</p>
-                </div>
-                <div>
-                <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                   
-                <Image src={thumb15} alt="service image 1"></Image>
-                </div>
-                <h3 class="mb-2 text-lg font-bold dark:text-white">Maintenance & Support</h3>
-                <p class="text-gray-500 dark:text-gray-400">Keep your site or application running smoothly with regular updates, bug fixes, and ongoing technical support.</p>
+                <div className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl p-6">
+                    <div className="flex justify-center items-center mb-6 w-12 h-12 rounded-full bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors duration-300">
+                        <Image src={thumb15} alt="service image 1" className="w-6 h-6" />
+                    </div>
+                    <h3 className="mb-3 text-xl font-bold text-white group-hover:text-blue-400 transition-colors">Maintenance & Support</h3>
+                    <p className="text-gray-400">Keep your site or application running smoothly with regular updates, bug fixes, and ongoing technical support.</p>
                 </div>
             </div>
-        </div>
+        </AnimatedSection>
         {/* Service section End  */}
 
-        <section class="mx-auto py-8 max-w-screen-xxl">
+        <AnimatedSection delay={0.4} className="mx-auto py-8 max-w-screen-xxl">
             <RecentProjects />
-        </section>
+        </AnimatedSection>
 
         {/* Testimonial Section Start */}
-        <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+        <AnimatedSection delay={0.6} className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm">
-            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">Testimonials</h2>
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Testimonials</h2>
         </div>
-        <figure className="max-w-screen-md mx-auto">
-            <svg className="h-8 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <figure className="max-w-screen-md mx-auto bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-800/50 shadow-xl transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl">
+            <svg className="h-12 mx-auto mb-6 text-blue-500/30" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
             </svg>
             <blockquote>
-            <p className="text-md font-medium text-gray-900 dark:text-white">The web application he developed with PHP and Laravel has elevated my portfolio website to new heights. It is seamless performance and intuitive design have garnered praise from clients and industry peers alike..</p>
+            <p className="text-xl font-medium text-gray-300 italic">The web application he developed with PHP and Laravel has elevated my portfolio website to new heights. It is seamless performance and intuitive design have garnered praise from clients and industry peers alike..</p>
             </blockquote>
-            <figcaption className="flex items-center justify-center mt-6 space-x-3">
-            <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                <div className="pr-3 font-medium text-gray-900 dark:text-white">Micheal Gough</div>
-                <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Manager at Andritz</div>
+            <figcaption className="flex items-center justify-center mt-8 space-x-4">
+            <div className="flex items-center divide-x-2 divide-gray-700">
+                <div className="pr-4 font-bold text-blue-400">Micheal Gough</div>
+                <div className="pl-4 text-sm text-gray-400">Manager at Andritz</div>
             </div>
             </figcaption>
         </figure>
-        </div>
+        </AnimatedSection>
         {/* Testimonial Section End */}
 
         {/* Blog Section Start */}
@@ -162,43 +156,49 @@ export default function Home() {
       {/* Blog Section End */}
 
       {/* Worked Section Start */}
-        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <h2 class="mb-3 lg:mb-10 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-3xl">Worked Organizations</h2>
-            <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400">
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb1} className="m-auto rounded-lg" alt="profile image" />                        
+        <AnimatedSection delay={0.8} className="p-8 mx-auto max-w-screen-xl sm:py-16 lg:px-8">
+            <h2 className="mb-12 text-4xl font-extrabold tracking-tight leading-none text-center bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">Worked Organizations</h2>
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-6">
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb1} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb8} className="m-auto rounded-lg" alt="profile image" />                        
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb8} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
-                {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb2} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link> */}
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb9} className="m-auto rounded-lg" alt="profile image" />                        
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb9} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
-                {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb5} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link> */}
-                
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb7} className="m-auto rounded-lg" alt="profile image" />                        
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb7} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb3} className="m-auto rounded-lg" alt="profile image" />                        
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb3} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
-                {/* <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb4} className="m-auto rounded-lg" alt="profile image" />                        
-                </Link> */}
-                <Link href="#" class="flex justify-center items-center bg-white p-3 rounded-lg">
-                    <Image src={thumb6} className="m-auto rounded-lg" alt="profile image" />                        
+                <Link href="#" className="group relative overflow-hidden rounded-xl bg-white backdrop-blur-sm border border-gray-200/30 p-6 transition-all duration-300 hover:bg-gray-50 hover:shadow-xl hover:scale-105">
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative z-10">
+                        <Image src={thumb6} className="w-full h-auto transition-all duration-300 group-hover:opacity-90 group-hover:transform group-hover:scale-110" alt="organization logo" />
+                    </div>
                 </Link>
             </div>
-        </div>
+        </AnimatedSection>
 
       {/* Worked Section End  */}
-
-    </section>
-    
+    </main>
   );
 }

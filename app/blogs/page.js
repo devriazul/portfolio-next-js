@@ -1,35 +1,137 @@
-"use client"; // Client component declaration
-import blogsData from '../../data/db.json'; // Adjust the path if necessary
+"use client";
+import { useState, useEffect } from 'react';
+import blogsData from '../../data/db.json';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Blogs() {
-  const blogs = blogsData.blogs;
+  const [blogs, setBlogs] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [isLoading, setIsLoading] = useState(true);
 
-  if (!blogs || blogs.length === 0) {
-    return <div className="text-center text-gray-400">No blogs available</div>;
+  useEffect(() => {
+    const loadBlogs = () => {
+      try {
+        const data = blogsData.blogs || [];
+        setBlogs(data);
+      } catch (error) {
+        console.error('Failed to load blogs:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadBlogs();
+  }, []);
+
+  const categories = ['all', ...new Set(blogs.map(blog => blog.category || 'uncategorized'))];
+
+  const filteredBlogs = selectedCategory === 'all'
+    ? blogs
+    : blogs.filter(blog => blog.category === selectedCategory);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center min-h-screen dark:bg-gray-900">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+      </div>
+    );
   }
 
   return (
-    <div className="max-w-screen-xl mx-auto p-8 dark:bg-gray-900">
-      <h1 className="text-4xl font-bold text-center mb-12">Blogs</h1>
+    <div className="min-h-screen dark:bg-gray-900 py-16">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+            My Blog Posts
+          </h1>
+          <p className="text-lg text-gray-400">
+            Insights, tutorials, and tech discussions
+          </p>
+        </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {blogs.map((blog) => (
-          <div key={blog.id} className="dark:bg-gray-800 shadow-md rounded-lg p-5">
-            <img 
-              src={`images/${blog.image}`} // Prepend 'images/' to the image path
-              alt={blog.title}
-              className="object-cover rounded-lg"
-            />
-            <h2 className="text-2xl font-bold text-gray-200 pt-3">{blog.title}</h2>
-            <p className="text-gray-400 mt-3">{blog.description && blog.description.length > 80
-                ? `${blog.description.slice(0, 80)}...`
-                : blog.description || "description not available."}</p>
-            <Link href={`/blogs/${blog.id}`} className="text-blue-500 font-bold mt-4 inline-block hover:underline">
-              Read More
-            </Link>
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-6 py-2 rounded-full transition-all duration-300 ${selectedCategory === category
+                ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/25'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white'}`}
+            >
+              {category.charAt(0).toUpperCase() + category.slice(1)}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredBlogs.map((blog) => (
+            <div
+              key={blog.id}
+              className="group relative bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden transition-all duration-300 hover:transform hover:scale-[1.02] hover:shadow-2xl"
+            >
+              <div className="relative h-64 w-full overflow-hidden">
+                <Image
+                  src={`/images/${blog.image}`}
+                  alt={blog.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-300 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              
+              <div className="p-6 relative z-10">
+                <h2 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  {blog.title}
+                </h2>
+                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                  {blog.description}
+                </p>
+                
+                {blog.tags && (
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {blog.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="px-2 py-1 text-xs font-medium bg-gray-700/50 text-gray-300 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
+                
+                <Link
+                  href={`/blogs/${blog.id}`}
+                  className="inline-flex items-center px-4 py-2 bg-blue-600/20 text-blue-300 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-blue-600/30 hover:text-blue-200 group-hover:translate-x-1"
+                >
+                  Read More
+                  <svg
+                    className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {filteredBlogs.length === 0 && (
+          <div className="text-center py-12">
+            <p className="text-gray-400 text-lg">
+              No blogs found in this category.
+            </p>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
